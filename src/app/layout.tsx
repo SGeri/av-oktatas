@@ -7,8 +7,8 @@ import "./globals.css";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "InnoPay Információbiztonsági oktatás",
-  description: "InnoPay Információbiztonsági oktatás",
+  title: "InnoPay Adatvédelmi oktatás",
+  description: "InnoPay Adatvédelmi oktatás",
 };
 
 export default function RootLayout({

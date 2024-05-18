@@ -2,64 +2,137 @@ import { TestQuestion } from "./types";
 
 export const TEST_QUESTIONS: TestQuestion[] = [
   {
-    question:
-      "A vezetői szerepvállalás és elkötelezettsége az ISMS kialakítása, bevezetése, működtetése, figyelemmel kisérése, átvizsgálása, fenntartása és fejlesztése iránt:",
+    question: "Mi a szabályzat célja?",
     answers: [
-      "célok kitűzése a szervezet releváns funkciója, folyamat és szintje",
-      "a szervezeti egységek kijelölése",
-      "az információvédelmi célok teljesítése és az információvédelmi szabályzatnak való megfelelés fontosságának, a jogszabályok szerinti felelősségeknek, valamint a folyamatos fejlesztés szükségességének kinyilvánításával a szervezet felé",
+      "Személyes adatok szabad áramlásának elősegítése",
+      "Információbiztonsági szintek meghatározása",
+      "Adatvédelmi elvek meghatározása és betartatása",
+      "Jogosultságkezelési rendszer bevezetése",
+      "Incidenskezelési protokollok",
+    ],
+    correctAnswerIndex: 2,
+  },
+  {
+    question: "Mi a szabályzat tárgyi hatálya?",
+    answers: [
+      "Csak a papír alapú dokumentumok",
+      "Csak az elektronikus adatok",
+      "A Társaság összes informatikai rendszere",
+      "Csak az adatvédelmi tisztviselő által kezelt adatok",
+      "Csak a GDPR által szabályozott adatok",
+    ],
+    correctAnswerIndex: 2,
+  },
+  {
+    question: "Melyik dokumentum nem kapcsolódik közvetlenül a szabályzathoz?",
+    answers: [
+      "Változáskezelési Szabályzat",
+      "Jogosultságkezelési Szabályzat",
+      "Értékesítési és Marketing Szabályzat",
+      "Incidenskezelési Szabályzat",
+      "Informatikai Biztonsági Szabályzat",
+    ],
+    correctAnswerIndex: 2,
+  },
+  {
+    question: "Mikor kell az adatvédelmi incidenseket bejelenteni?",
+    answers: [
+      "Csak ha az adatok elvesznek",
+      "Ha a jogosulatlan hozzáférés megtörténik",
+      "Csak ha az adatok módosításra kerülnek",
+      "Ha az adatok nem nyilvánosak",
+      "Ha az adatok már nem szükségesek",
+    ],
+    correctAnswerIndex: 1,
+  },
+  {
+    question: "Mi a dokumentált adatvédelmi hatásvizsgálat célja?",
+    answers: [
+      "Az adatok rendszeres frissítésének biztosítása",
+      "Az adatvédelmi kockázatok értékelése",
+      "A Társaság éves jelentésének készítése",
+      "Az érintettek tájékoztatása",
+      "A jogosultságkezelési folyamatok felülvizsgálata",
+    ],
+    correctAnswerIndex: 1,
+  },
+  {
+    question: "Mi jellemzi a 'KIEMELT' adatokat?",
+    answers: [
+      "Csak a Társaság vezetőségének ismert",
+      "Tartalmazza az üzleti titkokat és különleges személyes adatokat",
+      "Nyilvános adatok",
+      "Rendszeres adatok",
+      "Alacsony kockázatú adatok",
+    ],
+    correctAnswerIndex: 1,
+  },
+  {
+    question:
+      "Mikor van szükség az adatvédelmi incidensek nyilvántartásának vezetésére?",
+    answers: [
+      "Csak súlyos incidensek esetén",
+      "Mindig, amikor adatvédelmi incidens történik",
+      "Csak a vezérigazgató utasítására",
+      "Ha az adatok módosításra kerülnek",
+      "Évente egyszer, a szabályzat felülvizsgálatakor",
+    ],
+    correctAnswerIndex: 1,
+  },
+  {
+    question: "Mikor kell az adatvédelmi szabályzatot felülvizsgálni?",
+    answers: [
+      "Csak jogszabályi változás esetén",
+      "Nagyobb változások, vagy legalább évente",
+      "Minden új projekt indításakor",
+      "Minden negyedévben",
+      "Minden adatvédelmi incidens után",
+    ],
+    correctAnswerIndex: 1,
+  },
+  {
+    question: "Melyik nem tartozik a szabályzat személyi hatálya alá?",
+    answers: [
+      "Munkavállalók",
+      "Adatvédelmi tisztviselők",
+      "Külső szolgáltatók",
+      "Kiszervezett partnerek",
+      "Információbiztonsági felelősök",
+    ],
+    correctAnswerIndex: 3,
+  },
+  {
+    question: "Melyik nem a dokumentumban szereplő adatvédelmi szerepkör?",
+    answers: [
+      "Adatgazda",
+      "Információbiztonsági vezető",
+      "Rendszergazda",
+      "Adatfeldolgozó",
+      "Külső auditáló",
+    ],
+    correctAnswerIndex: 4,
+  },
+  {
+    question: "Mi jellemzi a 'FOKOZOTT' biztonsági osztályba sorolt adatokat?",
+    answers: [
+      "Csak nyilvános információk",
+      "Csak belső használatra",
+      "Nagy mennyiségű személyes adat",
+      "Üzleti titkok",
+      "Különleges személyes adatok",
     ],
     correctAnswerIndex: 2,
   },
   {
     question:
-      "A szervezetnek biztosítania kell azt is, hogy az érintett dolgozók tudatában legyenek…",
+      "Hogyan kell kezelni az elektronikus formában tárolt személyes adatokat?",
     answers: [
-      "az információbiztonsággal kapcsolatos tevékenységük szerepével és fontosságával, valamint azzal, hogy miképpen járulnak hozzá az ISMS céljainak eléréséhez",
-      "az integrált politikával",
-      "az összes jogszabályi követelménnyel",
+      "Csak papír alapon kell őrizni",
+      "Biztonságos adattárolási módszerekkel",
+      "Nyilvános hálózatokon szabadon továbbítható",
+      "Csak külső szolgáltatóknak adható át",
+      "Nincs szabályozva a dokumentumban",
     ],
-    correctAnswerIndex: 0,
-  },
-  {
-    question: "Kinek kell azonnal és haladéktalanul jelenteni az incidenseket?",
-    answers: [
-      "A mellettem ülő kollégámnak, ő majd intézi",
-      "Nem kell jelenteni",
-      "Ügyvezetőnek",
-      "az Incidens managernek a jegykezelő felületen, vagy annak elérhetetlensége esetén email-en vagy telefonon",
-    ],
-    correctAnswerIndex: 3,
-  },
-  {
-    question:
-      "Facebookon/Messengeren ír egy kedves lány/fiú, elkezdtek beszélgetni, jól alakulnak a dolgok, majd elkezd érdeklődni a munkád után. Mikor fogsz gyanút, hogy nem is te érdekled őt, hanem a munkahelyed ügyei, bizalmas információi?",
-    answers: [
-      "Megkérdezi mivel foglalkozom és hogy hol dolgozom. Majd elkezdi érdekelni, hogy épp milyen feladaton dolgozom, azt melyik cégnek, illetve hogyan épül fel nálunk a hálózat, milyen szoftvereken és melyik verziókon dolgozunk. Érdeklődik afelől is, hogy hol található az iroda és hogyan lehet oda bemenni",
-      "Megkérdezi hol dolgozom, és hogy szeretem-e a munkámat. Mikor szoktam munkába menni, mettől-meddig dolgozom",
-      "Megkérdezi, hogy hol dolgozom és mennyire sokat dolgozom, illetve azt is, hogy hétvégén szoktam-e dolgozni",
-      "Megkérdezi, hogy melyik cégnek dolgozom és hol az iroda, illetve afelől is érdeklődik, hogy hétvégente szoktam-e dolgozni",
-    ],
-    correctAnswerIndex: 0,
-  },
-  {
-    question: "Melyek az informatikai biztonság 3 fő alapelvei?",
-    answers: [
-      "rendelkezésre állás, sértetlenség, hitelesség",
-      "rendelkezésre állás, hitelesség, hatékonyság",
-      "sértetlenség, rendelkezésre állás, bizalmasság",
-      "bizalmasság, sértetlenség, hitelesség",
-    ],
-    correctAnswerIndex: 2,
-  },
-  {
-    question: "Megoszthatom-e a munkahelyi eszközömet:",
-    answers: [
-      "Csakis informatikai ismeretekkel rendelkező ismerősömmel",
-      "Igen, bárkivel",
-      "Igen, a többi alkalmazottal",
-      "Nem",
-    ],
-    correctAnswerIndex: 3,
+    correctAnswerIndex: 1,
   },
 ];

@@ -11,8 +11,8 @@ export default function Home() {
         <div className="flex justify-center items-center">
           <Image
             className="flex-grow"
-            src="/security.jpg"
-            alt="security background"
+            src="/gdpr.jpg"
+            alt="gdpr background"
             width={1200}
             height={600}
           />
@@ -20,16 +20,16 @@ export default function Home() {
 
         <div className="flex flex-col gap-4 p-6">
           <h1 className="text-4xl mb-4 text-center font-bold">
-            Információbiztonsági oktatás
+            Adatvédelmi oktatás
           </h1>
           <p>Kedves Kolléga!</p>
 
           <p>
-            Kérem, hogy a mellékelt Információbiztonsági oktatási anyagot
-            letölteni, majd a tananyaghoz kapcsolódó teszt kérdéssort kitölteni
-            szíveskedj! Sikeres teszt esetén (80%) az oktatásról igazolás
-            készül, melyet kinyomtatva és aláírva a HR részére kérem megküldeni!
-            Sikertelen teszt esetén a teszt ismételten kitölthető.
+            Kérem, hogy a mellékelt Adatvédelmi oktatási anyagot letölteni, majd
+            a tananyaghoz kapcsolódó teszt kérdéssort kitölteni szíveskedj!
+            Sikeres teszt esetén (80%) az oktatásról igazolás készül, melyet
+            kinyomtatva és aláírva a HR részére kérem megküldeni! Sikertelen
+            teszt esetén a teszt ismételten kitölthető.
           </p>
 
           <p>Együttműködéseteket megköszönve,</p>
@@ -44,7 +44,7 @@ export default function Home() {
           <section className="flex flex-col gap-2 space-y-4">
             <p>Az online tananyag az alábbi gombra kattintva érhető el.</p>
 
-            <Link href="/ib_alapkepzes.pdf" passHref legacyBehavior>
+            <Link href="/av_alapkepzes.pdf" passHref legacyBehavior>
               <a target="_blank" rel="noopener noreferrer">
                 <Button className="flex flex-row gap-2">
                   <ScrollText className="h-4 w-4" /> Tananyag letöltése

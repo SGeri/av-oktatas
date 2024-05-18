@@ -4,8 +4,8 @@ import dayjs from "dayjs";
 import { PDFDocument } from "pdf-lib";
 
 const TEMPLATE_URL =
-  "https://innopay-ib-oktatas.vercel.app/INNOPAY_IB_CERT_TEMPLATE.pdf";
-const FONT_URL = "https://innopay-ib-oktatas.vercel.app/Inter-Regular.ttf";
+  "https://innopay-av-oktatas.vercel.app/INNOPAY_AV_CERT_TEMPLATE.pdf";
+const FONT_URL = "https://innopay-av-oktatas.vercel.app/Inter-Regular.ttf";
 
 export async function POST(request: Request) {
   const { name }: GeneratePdfRequest = await request.json();
@@ -32,7 +32,7 @@ const getFile = async (url: string): Promise<Buffer> => {
 };
 
 function generateFileName(name: string) {
-  return `${name.toLowerCase().replace(" ", "_")}_ib_jegyzokonyv.pdf`;
+  return `${name.toLowerCase().replace(" ", "_")}_av_jegyzokonyv.pdf`;
 }
 
 async function addTextToPdf(
